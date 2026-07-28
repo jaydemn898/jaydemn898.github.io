@@ -103,8 +103,14 @@ function exitFullscreen(){
 }
 
 
+function disapeer(){
+    mover.style.display ='none'
+  setTimeout(() => {
+    mover.style.display = '';
+},500);
+  
 
-
+}
 
 
 //origami move mechanism
@@ -117,6 +123,7 @@ mover.addEventListener('click', () => {
   foldingnoise.play();
 
   fold++;
+  disapeer();
 //fold 1
 if (fold == 1){
   foldtext.textContent = `im on fold ${fold}`;

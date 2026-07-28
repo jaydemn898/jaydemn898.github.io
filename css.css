@@ -18,7 +18,7 @@ h1, p, h2 {
 
 .page{
     width:80vw;
-    height:1000px;
+    height:1100px;
     border:1px solid rgb(0, 0, 0);
     position: relative;
     overflow: hidden;
@@ -43,10 +43,9 @@ h1, p, h2 {
 }
 
 #page3{
+    
     background: rgb(240, 200, 120); /* warm honey/sand */
-    display:flex;
-    align-items: center;
-    justify-content: center;
+
 }
 
 #fun-fact{
@@ -120,11 +119,10 @@ h1, p, h2 {
     background: url('page3img.png') no-repeat -33px -24px;
 }
 
-/* ============================
-   QR CODE (hidden by default)
-============================ */
+
 #qrCodeImg{
-    display:none;
+    width:10vw;
+    height:10vw;
 }
 
 
@@ -188,11 +186,32 @@ nav ul li{
     bottom:0;
     background-color:white;
     height:10vh;
+ 
     width:100vw;
 }
+.papergameconsole{
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.organiser{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+.pc-only{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    }
+
 
 @media (max-width:800px){
-
+.pc-only{
+display:none;
+}
     /* Layout adjustments */
     .page{
         width:95vw;
@@ -210,6 +229,7 @@ nav ul li{
         width:15vw;
         height:15vw;
     }
+
 
 
     #japan{
