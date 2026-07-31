@@ -1,0 +1,322 @@
+
+body{
+    background-image:url('images/image copy.png');
+    background-size:cover;
+    background-attachment: fixed;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    gap:10px;
+    
+    background-color:rgb(248, 243, 236);
+}
+p{
+    font-size: larger;
+    text-align: center;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.page3 p {
+    font-size:3vh;
+}
+.page{
+    width: 80vw;
+    height: 1200px;
+    border:1px solid rgb(0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    border-radius:2%;
+}
+
+.background{
+    background-color: white;
+    border-radius: 50%;
+}
+
+#page1{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(240, 158, 120);
+    height:1000px;
+}
+
+#page2{
+    background: rgb(168, 199, 150); /* light warm sage */
+}
+
+#page3{
+    
+    background: rgb(240, 200, 120); /* warm honey/sand */
+
+}
+
+#fun-fact{
+    text-align: center;
+    font-size: 5vw;
+}
+.text2{
+    background-color: antiquewhite;
+}
+.text1{
+    background-color:white;
+}
+.quizwhite{
+    display:flex;
+
+    justify-content: center;
+    background-color: aliceblue;
+    border: 5px solid rgb(255, 197, 109);
+}
+.white{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background-color: aliceblue;
+    border: 5px solid rgb(255, 197, 109);
+}
+.green{
+    display:flex;
+    flex-direction: row;
+    background-color: rgb(255, 197, 109);
+    justify-content: space-between;
+    border: 5px solid aliceblue;
+}
+#page3 .green,#page3 .white{
+padding:3vw;
+}
+
+.intro-image{
+    background: rgba(120, 30, 20, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    height: 50vh;
+    color: rgb(0, 0, 0);
+}
+
+.intro-image h1 {
+    background: rgba(120, 30, 20, 0.45);
+    padding: 8vw;
+    border-radius: 8px;
+    font: size 5vw;
+    color: rgb(240, 234, 198);
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+
+.image{
+    width: 10vw;
+    height: 10vw;
+    border: black 3px solid;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    padding:0.5%;
+}
+
+.image:hover{
+
+    animation: moving ease-in-out infinite;
+
+}
+
+#japan{
+    background: url('page3img.png') no-repeat -34px -145px;
+    background-size: 50%;
+}
+
+#crane{
+    background: url('page3img.png') no-repeat -249px -173px;
+}
+
+#mario{
+    background: url('page3img.png') no-repeat -253px 3px;
+}
+
+#youtube{
+    background: url('page3img.png') no-repeat -33px -24px;
+}
+
+
+#qrCodeImg{
+    width: 10vw;
+    height: 10vw;
+}
+
+
+.nav-btn {
+    width: 25vw;
+    height: 10vh;
+    background-color: beige;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    display:inline;
+}
+
+/* Hamburger icon hidden by default on larger screens */
+#hamIcon{
+    display: none;
+    width: 80vw;
+    height: 5vh;
+    font-size: 2vh;
+}
+
+
+#paper{
+    box-sizing: border-box;
+    width: clamp(80px, 20vw, 150px);
+    height: clamp(80px, 20vw, 150px);
+    background: url('images/papersprite.png') no-repeat -1px -29px ;
+    
+    cursor: pointer;
+
+    position: absolute;
+}
+
+#reset{
+    text-align: center;
+}
+
+#lirhino{
+    transform: rotate(270deg);
+    width:12vh;
+    height:12vh;
+    background: url('images/papersprite.png') -394px -380px no-repeat;
+}
+
+#lirhino:hover{
+    animation: backflip 1s linear 1;
+}
+
+
+@keyframes backflip{
+    from {transform: rotate(-90deg);}
+    to {transform: rotate(270deg);}
+}
+
+#advertistment{
+    position: fixed;
+    left: 0;
+    bottom:0;
+    background-color:white;
+    height:5vh;
+    width:100vw;
+}
+.papergameconsole{
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.organiser{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.pc-only{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+
+@media (max-width:800px){
+.quizwhite{
+    font-size: small;
+}
+
+.intro-image{
+    width:80vw;
+    height:80vw;
+}
+.intro-image h1{
+    font-size:5vw;
+}
+.pc-only{
+display:none;
+}
+
+#paper{
+    box-sizing: border-box;
+    width: clamp(80px, 20vw, 150px);
+    height: clamp(80px, 20vw, 150px);
+    background: url('images/papersprite.png') no-repeat -1px -29px ;
+    
+    /* Layout adjustments */
+    .page{
+        width: 95vw;
+    }
+
+    #page1{
+        height: 80vh;
+    }
+
+    #page3{
+        height: 100vh;
+    }
+
+    .image{
+        width: 15vw;
+        height: 15vw;
+    }
+
+
+
+    #japan{
+        background: url('page3img.png') no-repeat -34px -145px;
+    }
+
+    #crane{
+        background: url('page3img.png') no-repeat -249px -173px;
+    }
+
+    #mario{
+        background: url('page3img.png') no-repeat -253px 3px;
+    }
+
+    #youtube{
+        background: url('page3img.png') no-repeat -33px -24px;
+    }
+
+
+    #page1btn, #page2btn, #page3btn {
+        width: 80vw;
+        height: 5vh;
+    }
+
+    .nav-btn {
+        width: 80vw;
+        height: 8vh;
+    }
+
+
+    #hamIcon{
+        display: block;
+    }
+
+    nav ul {
+        display: none; 
+    }
+
+    nav ul li{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .menuShow{
+        display: block;
+    }
+}
